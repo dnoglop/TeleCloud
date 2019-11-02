@@ -202,7 +202,7 @@ public class TelaVideos1 extends YouTubeBaseActivity implements YouTubePlayer.On
                         });
 
                         // --- Carrega no player o link do video abaixo --
-                        player.cuePlaylist("PLf1lowbdbFIAGzFSFAB-MRrXgJKV-YAHc");break;
+                        player.cuePlaylist("PLf1lowbdbFIAURvpD8Qy8PqwrMjwx0N64");break;
 
                     case "videosGA":
 
@@ -220,7 +220,7 @@ public class TelaVideos1 extends YouTubeBaseActivity implements YouTubePlayer.On
                             }
                         });
 
-                        player.cuePlaylist("PLf1lowbdbFIAFr80SlJP7jsJcssvqRV5b");break;
+                        player.cuePlaylist("PLEfwqyY2ox86GfOHvSgN5iJZKNN_AUlU_");break;
                 }
             }
         }
