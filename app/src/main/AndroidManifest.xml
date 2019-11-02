@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edmt.dev.androidgridlayout">
+
+    <!-- Permissões de acesso a Internet e Acesso ao estado das redes móveis -->
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <!-- Definição do Icone, Nome e o Tema da aplicação -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/logo_app"
+        android:label="@string/app_name"
+        android:configChanges="orientation"
+        android:roundIcon="@mipmap/logo_app_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Definição das Activity da aplicação -->
+
+        <activity android:name=".GridMaterias"></activity>
+        <activity android:name=".GridSemestre" />
+        <activity android:name=".TelaVideos" />
+        <activity android:name=".TelaVideos1" />
+        <activity android:name=".TelaVideos2" />
+        <activity android:name=".TelaLivros" />
+        <activity android:name=".Feed" />
+        <activity android:name=".Opcoes" />
+        <activity android:name=".GridLista" />
+        <activity android:name=".TelaLista" />
+
+        <!-- Definindo a activity Splash como a tela inicial -->
+
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

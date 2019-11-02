@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edmt.dev.androidgridlayout.Splash">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/bg_app"
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="200dp"
+                android:src="@drawable/materia"/>
+
+        </RelativeLayout>
+
+        <GridLayout
+            android:id="@+id/mainGrid"
+            android:columnCount="1"
+            android:rowCount="3"
+            android:alignmentMode="alignMargins"
+            android:columnOrderPreserved="false"
+            android:layout_weight="5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:padding="20dp"
+            >
+
+            <!-- Row 1 -->
+
+            <!-- Column 1 -->
+            <android.support.v7.widget.CardView
+                android:layout_width="194dp"
+                android:layout_height="0dp"
+                android:layout_rowWeight="1"
+                android:layout_columnWeight="1"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="15dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/list_1"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lista de Exercícios"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!-- Column 2 -->
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardElevation="9dp"
+                app:cardCornerRadius="25dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/books" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Livros da Matéria"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <!-- Row 2 -->
+
+            <!-- Column 1 -->
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardElevation="9dp"
+                app:cardCornerRadius="25dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/youtube" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Video Aulas"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <!-- Column 2 -->
+            <android.support.v7.widget.CardView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_columnWeight="1"
+                android:layout_rowWeight="1"
+                android:layout_marginBottom="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                app:cardElevation="9dp"
+                app:cardCornerRadius="25dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal|center_vertical"
+                    android:layout_margin="5dp"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_marginBottom="5dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/love" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Pedidos e Feedback do App"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@android:color/black"
+                        android:textSize="15dp"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</ScrollView>

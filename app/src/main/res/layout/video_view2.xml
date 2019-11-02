@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edmt.dev.androidgridlayout.Splash">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:background="@drawable/bg_lim"
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btbback"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="voltar"
+            android:textColor="#FFFFFF"
+            android:textSize="10dp"
+            android:padding="8dp"
+            android:elevation="0dp"
+            android:background="@drawable/art_btnback"
+            android:drawableLeft="@drawable/ic_back_black_24dp"/>
+
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+
+            <ImageView
+                android:layout_width="300dp"
+                android:layout_height="150dp"
+                android:src="@drawable/video"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/limites"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:background="@drawable/art_btn"
+                android:padding="10dp"
+                android:text="Playlist de Limites">
+            </Button>
+
+            <Button
+                android:id="@+id/integral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:background="@drawable/art_btn"
+                android:padding="10dp"
+                android:text="Playlist de Derivadas">
+            </Button>
+
+            <Button
+                android:id="@+id/derivada"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/art_btn"
+                android:padding="10dp"
+                android:layout_margin="10dp"
+                android:text="Playlist de Integrais"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+            </Button>
+
+
+        </LinearLayout>
+
+        <GridLayout
+            android:id="@+id/mainGrid"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:alignmentMode="alignMargins"
+            android:columnCount="1"
+            android:columnOrderPreserved="false"
+            android:padding="20dp"
+            android:rowCount="1">
+
+            <com.google.android.youtube.player.YouTubePlayerView
+                android:id="@+id/video_youtube1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="208dp"
+                android:background="#FFFF" />
+
+            <Button
+                android:id="@+id/feed"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:layout_marginTop="80dp"
+                android:background="@drawable/art_btn"
+                android:foregroundGravity="bottom"
+                android:padding="10dp"
+                android:text="Problemas? Me conte mais!"></Button>
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</ScrollView>
