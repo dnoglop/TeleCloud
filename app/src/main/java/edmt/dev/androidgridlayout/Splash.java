@@ -34,7 +34,7 @@ public class Splash extends AppCompatActivity {
             public void run(){
 
                 try{
-                    sleep(3000); // Espera o tempo de 3 segundos
+                    sleep(2550); // Espera o tempo de 3 segundos
                 }catch (InterruptedException e){
                     e.printStackTrace();
                 }

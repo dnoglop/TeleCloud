@@ -28,12 +28,12 @@ public class Feed extends AppCompatActivity {
 
         // ---- Linkando os elementos da tela com as variáveis declaradas
 
-        mEmail = (EditText)findViewById(R.id.mailId);
-        mMessage = (EditText)findViewById(R.id.mensageID);
-        mSubject = (EditText)findViewById(R.id.assuntoID);
-        mNome = (EditText) findViewById(R.id.nomeID);
-        btnEnviar = (Button) findViewById(R.id.btnEnviar);
-        iv = (ImageView) findViewById(R.id.logo);
+        mEmail      = (EditText)findViewById(R.id.mailId);
+        mMessage    = (EditText)findViewById(R.id.mensageID);
+        mSubject    = (EditText)findViewById(R.id.assuntoID);
+        mNome       = (EditText) findViewById(R.id.nomeID);
+        btnEnviar   = (Button) findViewById(R.id.btnEnviar);
+        iv          = (ImageView) findViewById(R.id.logo);
 
         // ---- Quando clicarmos em 'Enviar Mensagem' os dados são enviados
 
@@ -49,14 +49,16 @@ public class Feed extends AppCompatActivity {
 
     private void sendMail() {
 
-        String mail = mEmail.getText().toString().trim();
-        String name = mNome.getText().toString();
-        String message = mMessage.getText().toString();
-        String subject = mSubject.getText().toString().trim();
+        String mail     = mEmail.getText().toString().trim();
+        String name     = mNome.getText().toString();
+        String message  = mMessage.getText().toString();
+        String subject  = mSubject.getText().toString().trim();
 
         // ---- Mensagem que será enviada no corpo do e-mail
 
-        String ms = ("Olá, uma nova mensagem de " + name + "\n\n" + "Mensagem: \n" + message + "\n\n" + "Email: " + mail);
+        String ms = ("Olá Danilo, chegou uma nova mensagem do(a) " + name + "\n\n"
+                    + "Mensagem enviada: \n" + message + "\n\n"
+                    + "Email de Contato: " + mail);
 
         // ---- Função que realiza o envio tendo como parâmetros o assunto e a mensagem
         JavaMailAPI javaMailAPI = new JavaMailAPI(this,subject,ms);

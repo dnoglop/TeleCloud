@@ -46,7 +46,7 @@ public class JavaMailAPI extends AsyncTask<Void,Void,Void>  {
         mProgressDialog.dismiss();
 
         // --- Mostra Toast de sucesso --
-        Toast.makeText(mContext,"Mensagem Enviada, muito obrigado pelo Feedback",Toast.LENGTH_LONG).show();
+        Toast.makeText(mContext,"Mensagem enviada, muito obrigado pelo seu Feedback",Toast.LENGTH_LONG).show();
     }
 
     @Override

@@ -13,16 +13,16 @@ import com.google.android.youtube.player.YouTubePlayerView;
 
 public class TelaVideos extends YouTubeBaseActivity implements YouTubePlayer.OnInitializedListener {
 
-    // --- Declarando a chave KEY para a API do Youtube --
-    public static  String API_KEY = "AIzaSyA4YLfkzpc0o-mg_aekndtiX22pIq57_74";
+        // --- Declarando a chave KEY para a API do Youtube --
+        public static  String API_KEY = "AIzaSyA4YLfkzpc0o-mg_aekndtiX22pIq57_74";
 
-    // --- Declarando as variáveis --
-    public String op;
-    public Button btnLimite;
-    public Button btnDerivada;
-    public Button btnIntegral;
-    public Button feed;
-    public Button back;
+        // --- Declarando as variáveis --
+        public String op;
+        public Button btnLimite;
+        public Button btnDerivada;
+        public Button btnIntegral;
+        public Button feed;
+        public Button back;
 
         @Override
         protected void onCreate(Bundle savedInstanceState) {
@@ -30,11 +30,11 @@ public class TelaVideos extends YouTubeBaseActivity implements YouTubePlayer.OnI
             setContentView(R.layout.video_view);
 
             // --- Linkando os elementos da tela com as variaveis criadas --
-            btnLimite =     (Button) findViewById(R.id.limites);
-            btnDerivada =   (Button) findViewById(R.id.derivada);
-            btnIntegral =   (Button) findViewById(R.id.integral);
-            feed =          (Button) findViewById(R.id.feed);
-            back =          (Button) findViewById(R.id.btbback);
+            btnLimite   = (Button) findViewById(R.id.limites);
+            btnDerivada = (Button) findViewById(R.id.derivada);
+            btnIntegral = (Button) findViewById(R.id.integral);
+            feed        = (Button) findViewById(R.id.feed);
+            back        = (Button) findViewById(R.id.btbback);
 
             // --- Verifica de a ultima activity enviou alguma coisa atraves da TAG 'ma' --
             Intent intent1 = getIntent();
